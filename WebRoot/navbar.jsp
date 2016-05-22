@@ -1,41 +1,43 @@
 <div class="navbar-wrapper">
-      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
       <div class="container">
 
-        <div class="navbar navbar-inverse">
-          <div class="navbar-inner">
-            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
-            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="brand" href="#">Medical Tour</a>
-            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
-            <div class="nav-collapse collapse">
-              <ul class="nav">
-                <li class="active"><a href="#">Home</a></li>               
-                <li><a href="#signin">Sign in</a></li>
-                <li><a href="#signon">Sign out</a></li>
-                <li><a href="#contact">Contact</a></li>
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Medical Tour</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="login.jsp">Sign in</a></li>
+                <li><a href="register.jsp">Sign on</a></li>
                 <li><a href="#about">About</a></li>
-                <!-- Read about Bootstrap dropdowns at http://twbs.github.com/bootstrap/javascript.html#dropdowns -->
+                <li><a href="#contact">Contact</a></li>
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Service<b class="caret"></b></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">service1</a></li>
-                    <li><a href="#">service2</a></li>
-                    <li class="divider"></li>
-                    <li class="nav-header">products</li>
-                    <li><a href="#">product1</a></li>
-                    <li><a href="#">product2</a></li>
+                    <li><a href="#">Service1</a></li>
+                    <li><a href="#">Service2</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">Product</li>
+                    <li><a href="#">Pro1</a></li>
+                    <li><a href="#">Pro2</a></li>
                   </ul>
                 </li>
-                <li class="navbar-provider"><a href="#providerhere">Provider Here</a></li>
+                
               </ul>
-            </div><!--/.nav-collapse -->
-          </div><!-- /.navbar-inner -->
-        </div><!-- /.navbar -->
+              <ul class="nav navbar-nav navbar-right">
+		            <li><a href="registerProvider.jsp">Provider Here</a></li>
+		      </ul>
+            </div>
+          </div>
+        </nav>
 
-      </div> <!-- /.container -->
-    </div><!-- /.navbar-wrapper -->
+      </div>
+ </div>
