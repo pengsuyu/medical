@@ -37,29 +37,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
   </head>
-
-<body>
-	<jsp:include page="navbar.jsp"></jsp:include>
-	<hr class="featurette-divider">
-    <div class="container">
-
-      <form class="form-signin" action="login" method="post">
-        <h2 class="form-signin-heading">Please sign in</h2>
-        <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="email" id="inputEmail" name="username" class="form-control" placeholder="Email address" required autofocus>
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="remember-me"> Remember me
-          </label>
-        </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-      </form>
-
-    </div> <!-- /container -->
-	<hr class="featurette-divider">
-	
-    <jsp:include page="footer.jsp"></jsp:include>
-  </body>
-</html>
+  
+ <body>
+ <h1><s:text name="nav.home" /></h1>
+ </body>
+ </html>

@@ -1,3 +1,4 @@
+<%@ taglib uri="/struts-tags" prefix="s" %> 
 <div class="navbar-wrapper">
       <div class="container">
 
@@ -14,11 +15,10 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
+                <li class="active"><a href="index.jsp" charset="utf-8"><s:text name="nav.home"/></a></li>
                 <li><a href="login.jsp">Sign in</a></li>
                 <li><a href="register.jsp">Sign on</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="about.jsp">About</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
                   <ul class="dropdown-menu">
@@ -30,8 +30,15 @@
                     <li><a href="#">Pro2</a></li>
                   </ul>
                 </li>
+              <form action="##" class="navbar-form navbar-left" rol="search">
+				 <div class="form-group">
+				  <input type="text" class="form-control" placeholder="Search Hospital" />
+				 </div>
+				 <button type="submit" class="btn btn-default ">search</button>
+				 </form>
                 
               </ul>
+              
               <ul class="nav navbar-nav navbar-right">
 		            <li><a href="registerProvider.jsp">Provider Here</a></li>
 		      </ul>
