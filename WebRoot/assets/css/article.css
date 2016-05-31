@@ -1,0 +1,15 @@
+.article {
+	width: 70%;
+	max-width: 500px;
+	padding: 100px;
+	margin: 0 auto;
+}
+
+.article .title{
+	color: gray;
+}
+
+.article .para{
+	padding: 5px;
+	size: 5;
+}

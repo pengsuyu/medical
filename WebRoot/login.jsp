@@ -39,12 +39,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
 
 <body>
-	<jsp:include page="navbar.jsp"></jsp:include>
+	<%@ include file="navbar.jsp" %>
 	<hr class="featurette-divider">
     <div class="container">
 
       <form class="form-signin" action="login" method="post">
-        <h2 class="form-signin-heading">Please sign in</h2>
+        <h2 class="form-signin-heading"><s:text name="login.form.header"/></h2>
         <label for="inputEmail" class="sr-only">Email address</label>
         <input type="email" id="inputEmail" name="username" class="form-control" placeholder="Email address" required autofocus>
         <label for="inputPassword" class="sr-only">Password</label>
@@ -56,10 +56,20 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         </div>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
       </form>
-
+      
     </div> <!-- /container -->
+    <div class="container">
+	  <form class="form-register form-horizontal" action="register.jsp" method="post">
+	    <fieldset >
+ 			     <label class="sr-only">Go to Register</label>
+		          <!-- Button -->
+	             <button class="btn btn-lg btn-primary btn-block">Go to Register>></button>
+	    </fieldset>
+	  </form>  	          
+	</div>
+    
 	<hr class="featurette-divider">
 	
-    <jsp:include page="footer.jsp"></jsp:include>
+    <%@ include file="footer.jsp" %>
   </body>
 </html>

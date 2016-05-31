@@ -39,107 +39,59 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
 <body>
 <!-- navbar -->
-	<jsp:include page="navbar.jsp"></jsp:include>
+	<%@ include file="navbar.jsp" %>
 	<hr class="featurette-divider">
 	<div class="container">
-	  <form class="form-register form-horizontal">
+	  <form class="form-register form-horizontal" action="register" method="post">
 	    <fieldset >
-		      <div id="legend" class="">
-		        <legend class="form-register-heading">Register</legend>
-		      </div>
-		    <div class="control-group">
-		          <!-- Text input-->
-		          <label class="control-label" for="input01">Mailaddress</label>
-		          <div class="controls">
-		            <input type="text" placeholder="Mailaddress" class="input-xlarge">
+		      <h2 class="form-register-heading"><s:text name="register.form.header"/></h2>
+		   
+		          <label class="sr-only" for="input01">Mailaddress</label>
+	              <input type="email" placeholder="Mailaddress" class="form-control" required autofocus>
+	              <p class="help-block"></p>
+		          
+
+		        
+		          <label class="sr-only" for="input01">Username</label>
+		            <input type="password" placeholder="Username" class="form-control">
 		            <p class="help-block"></p>
-		          </div>
-		        </div><div class="control-group">
+		          
 		
-		          <!-- Text input-->
-		          <label class="control-label" for="input01">Username</label>
-		          <div class="controls">
-		            <input type="text" placeholder="Username" class="input-xlarge">
-		            <p class="help-block"></p>
-		          </div>
-		        </div>
+		    
+		          <label class="sr-only" for="input01">Password</label>
+		          <input type="text" placeholder="Password" class="form-control">
+		          <p class="help-block"></p>
+		         
 		
-		    <div class="control-group">
+		    
+		          <label class="sr-only" for="input01">Password Again</label>
+		          <input type="text" placeholder="Password Again" class="form-control">
+		          <p class="help-block"></p>
+
 		
-		          <!-- Text input-->
-		          <label class="control-label" for="input01">Password</label>
-		          <div class="controls">
-		            <input type="text" placeholder="Password" class="input-xlarge">
-		            <p class="help-block"></p>
-		          </div>
-		        </div>
-		
-		    <div class="control-group">
-		
-		          <!-- Text input-->
-		          <label class="control-label" for="input01">Password Again</label>
-		          <div class="controls">
-		            <input type="text" placeholder="Password Again" class="input-xlarge">
-		            <p class="help-block"></p>
-		          </div>
-		        </div>
-		
-		    <div class="control-group">
-		
-		          <!-- Text input-->
-		          <label class="control-label" for="input01">Cellphone</label>
-		          <div class="controls">
-		            <input type="text" placeholder="Cellphone" class="input-xlarge">
-		            <p class="help-block"></p>
-		          </div>
-		        </div>
-		
-		    <div class="control-group">
-		
-		          <!-- Text input-->
-		          <label class="control-label" for="input01">Country</label>
-		          <div class="controls">
-		            <input type="text" placeholder="Country" class="input-xlarge">
-		            <p class="help-block"></p>
-		          </div>
-		        </div>
-		
-		    <div class="control-group">
-		
-		          <!-- Text input-->
-		          <label class="control-label" for="input01">City</label>
-		          <div class="controls">
-		            <input type="text" placeholder="City" class="input-xlarge">
-		            <p class="help-block"></p>
-		          </div>
-		        </div>
-		
-		    <div class="control-group">
-		
-		          <!-- Textarea -->
-		          <label class="control-label">Communication Address</label>
-		          <div class="controls">
-		            <div class="textarea">
-		                  <textarea type="" class=""> </textarea>
-		            </div>
-		          </div>
-		        </div>
-		
-		    <div class="control-group">
-		          <label class="control-label">Submit</label>
-		
+		          <label class="sr-only">Submit</label>
 		          <!-- Button -->
 		          <div class="controls">
-		            <button class="btn btn-success">Submit</button>
+		            <button class="btn btn-lg btn-primary btn-block">Submit</button>
 		          </div>
-		        </div>
-	
+		          
 	    </fieldset>
 	  </form>
+	  	          
+		      		          
+	</div>
+	<div class="container">
+	  <form class="form-register form-horizontal" action="login.jsp" method="post">
+	    <fieldset >
+ 			     <label class="sr-only">Have Registered</label>
+		          <!-- Button -->
+	             <button class="btn btn-lg btn-primary btn-block">Have Registered>></button>
+	    </fieldset>
+	  </form>
+	  	          
 	</div>
 	
-	
-	
-
+	<hr class="featurette-divider">
+<%@ include file="footer.jsp" %>
 </body>
 </html>
