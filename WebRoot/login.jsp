@@ -6,7 +6,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 %>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
+<html xmlns:wb="http://open.weibo.com/wb">
   <head>
     <base href="<%=basePath%>">
     
@@ -17,13 +17,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     
     
   <!-- Custom styles for this template -->
-    <link href="assets/css/carousel.css" rel="stylesheet">  
-    <link href="assets/css/Site.css" rel="stylesheet">
-    <link href="assets/css/login.css" rel="stylesheet">
-    <link href="assets/css/register.css" rel="stylesheet">
-    
-    <script src="assets/js/ie-emulation-modes-warning.js"></script>    
-        
+    <%@ include file="includes.jsp" %> 
+      
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -54,10 +49,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <input type="checkbox" value="remember-me"> Remember me
           </label>
         </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-      </form>
-      
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>		
+      </form> 
     </div> <!-- /container -->
+    
     <div class="container">
 	  <form class="form-register form-horizontal" action="register.jsp" method="post">
 	    <fieldset >
@@ -68,6 +63,15 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	  </form>  	          
 	</div>
     
+
+	<div class="container">
+		<div class="third-login-tool">
+		
+		</div>
+	</div>	
+	
+	
+	 
 	<hr class="featurette-divider">
 	
     <%@ include file="footer.jsp" %>

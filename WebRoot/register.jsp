@@ -17,12 +17,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     
     
   <!-- Custom styles for this template -->
-    <link href="assets/css/carousel.css" rel="stylesheet">  
-    <link href="assets/css/Site.css" rel="stylesheet">
-    <link href="assets/css/login.css" rel="stylesheet">
-    <link href="assets/css/register.css" rel="stylesheet">
-    
-    <script src="assets/js/ie-emulation-modes-warning.js"></script>    
+    <%@ include file="includes.jsp" %>
         
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>

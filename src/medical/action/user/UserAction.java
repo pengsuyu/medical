@@ -20,8 +20,7 @@ public class UserAction {
 	public String execute() throws Exception {
 	        // 只有用户名为wwfy，密码为123456方可成功登陆
 	
-	    if (username.equals("pengsuyu") && password.equals("000123")) {
-	
+	    if (username.equals("550548715@qq.com") && password.equals("000123")) {	
 	        return "success";
 	
 	    } else {

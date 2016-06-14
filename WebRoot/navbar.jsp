@@ -29,16 +29,18 @@
                     <li><a href="#">Pro2</a></li>
                   </ul>
                 </li>
+                
               <form action="search" class="navbar-form navbar-left" rol="search">
 				 <div class="form-group">
 				  <input type="text" class="form-control " placeholder="Search Hospital" />
 				 </div>
 				 <button type="submit" class="btn btn-default "><s:text name="nav.search"/></button>
 				 </form>
-                
+               
               </ul>
               
               <ul id="navbar-providerhere" class="nav navbar-nav navbar-right">
+                    <li><div class="third-login-tool" id="wb_connect_btn" ></div></li>
 		            <li><a href="javascript:void(0)" onclick="activeProviderhere()"><s:text name="nav.providerhere"/></a></li>
 		      </ul>
             </div>

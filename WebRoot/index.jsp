@@ -6,7 +6,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 %>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
+<html xmlns:wb="http://open.weibo.com/wb">
   <head>
     <base href="<%=basePath%>">
     
@@ -17,10 +17,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     
     
   <!-- Custom styles for this template -->
-    <link href="assets/css/carousel.css" rel="stylesheet">  
-    <link href="assets/css/Site.css" rel="stylesheet">
-    <link href="assets/css/login.css" rel="stylesheet">
-    <link href="assets/css/register.css" rel="stylesheet">
+    <%@ include file="includes.jsp" %> 
     
     <script src="assets/js/ie-emulation-modes-warning.js"></script>    
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
