@@ -1,8 +1,10 @@
 eclipse.preferences.version=1
+encoding//WebRoot/assets/js/login.js=UTF-8
+encoding//WebRoot/assets/js/request.js=UTF-8
 encoding//WebRoot/index.jsp=UTF-8
 encoding//WebRoot/lang.jsp=UTF-8
 encoding//WebRoot/login.jsp=UTF-8
 encoding//WebRoot/navbar.jsp=UTF-8
-encoding//src/medical/action/user/UserAction.java=UTF-8
+encoding//src/com/medical/login/action/UserAction.java=UTF-8
 encoding//src/resource_en_US.properties=UTF-8
 encoding//src/resource_zh_CN.properties=UTF-8

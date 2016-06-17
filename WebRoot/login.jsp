@@ -18,6 +18,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     
   <!-- Custom styles for this template -->
     <%@ include file="includes.jsp" %> 
+    <script type="text/javascript" src="assets/js/request.js"></script>
+    <script type="text/javascript" src="assets/js/login.js" ></script>
       
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -36,21 +38,30 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <body>
 	<%@ include file="navbar.jsp" %>
 	<hr class="featurette-divider">
+	
     <div class="container">
 
-      <form class="form-signin" action="login" method="post">
-        <h2 class="form-signin-heading"><s:text name="login.form.header"/></h2>
+      
+      <form class="form-signin"  method="post">
+        <h2 class="form-signin-heading"><s:text name="login.form.header"/>
+        <div id="loginNotice"  class="form-notice"> </div>
+        </h2>
+        
         <label for="inputEmail" class="sr-only">Email address</label>
         <input type="email" id="inputEmail" name="username" class="form-control" placeholder="Email address" required autofocus>
         <label for="inputPassword" class="sr-only">Password</label>
         <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required>
+    
         <div class="checkbox">
           <label>
             <input type="checkbox" value="remember-me"> Remember me
           </label>
+          
         </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>		
+        
+        <button class="btn btn-lg btn-primary btn-block" onclick="enter()">Sign in</button>			
       </form> 
+      
     </div> <!-- /container -->
     
     <div class="container">
@@ -64,11 +75,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	</div>
     
 
-	<div class="container">
-		<div class="third-login-tool">
-		
-		</div>
-	</div>	
+	
 	
 	
 	 

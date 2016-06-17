@@ -2,15 +2,16 @@
 <!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
 <struts>
   <package name="loginAction" namespace="/" extends="struts-default">  
-	<action name = "login" class = "medical.action.user.UserAction" >
+	<action name = "login" class = "com.medical.login.action.UserAction" >
             <!-- 定义3个逻辑视图和物理资源之间的映射  -->
             <result name = "input">/login.jsp</result>
             <result name = "error">/error.jsp</result>
             <result name = "success">/success.jsp</result>
+            <result name = "result">/result.jsp</result>
         </action>
    </package>
    
    <constant name="struts.custom.i18n.resources" value="resource"></constant>  
-  
+   <constant name="struts.action.extension" value="action"></constant>
   
 </struts>   

@@ -40,6 +40,9 @@
               </ul>
               
               <ul id="navbar-providerhere" class="nav navbar-nav navbar-right">
+                    <button type="button" class="btn btn-default btn-navbar">
+					  <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+					</button>
                     <li><div class="third-login-tool" id="wb_connect_btn" ></div></li>
 		            <li><a href="javascript:void(0)" onclick="activeProviderhere()"><s:text name="nav.providerhere"/></a></li>
 		      </ul>

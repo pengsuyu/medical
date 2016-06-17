@@ -12,6 +12,13 @@
   font-weight: normal;
 }
 
+.form-signin .form-notice{
+	font-weiht: normal;
+	float: right;
+	color: red;
+	font-size:50%;
+}
+
 .form-signin .form-control {
   position: relative;
   height: auto;

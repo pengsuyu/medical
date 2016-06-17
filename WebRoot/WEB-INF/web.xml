@@ -10,6 +10,30 @@
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
   
+  <servlet>
+  	<servlet-name>login-servlet</servlet-name>
+  	<servlet-class>com.medical.login.action.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>com.medical.login.action.UserLoginServlet</servlet-class>
+  </servlet>
+
+
+
+  <servlet-mapping>
+  	<servlet-name>login-servlet</servlet-name> 
+  	<!-- url-pattern用于地址反射，和form表单访问地址对齐 -->
+  	<url-pattern>/loginhbm</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/UserLoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  
   <filter>
         <filter-name>struts2</filter-name>
         <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
